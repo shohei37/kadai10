@@ -1,0 +1,278 @@
+
+/* 全体 */
+.wrap{
+    width: 1366px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+
+}
+
+
+/* タイトル画像 */
+    
+    .mainvisual{
+        text-align: center;
+        position: relative;
+        margin: 50px;
+    } 
+
+    .mainvisual-text{
+        font-size: 100px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate3d(-50%,-50%,0)
+
+    }
+
+
+    .btn{
+        width: 30rem;
+        display: block;
+        margin: auto;
+        padding: 2.1rem 0;
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: black;
+        color: #fff;
+    
+    }
+
+
+
+
+
+    /* 以下battle.htmlのCSS */
+
+
+    /* 全体背景 */
+
+    .background{
+        margin: 100px;
+        width: 100%;
+    }
+
+    /* BGM */
+
+    .audio-btn{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 540px;
+        left: 270px;
+    }
+
+    .bgm-btn{
+        width: 80px;
+        height: 60px;
+        display: block;
+        margin: auto;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 1.0rem;
+        background-color: black;
+        color: #fff;
+
+    }
+  
+
+    /* 敵画面 */
+
+    .enemy-pic{
+        position: absolute;
+        top: 50px;
+        left: 300px;
+        width: 100%;
+    }
+
+    .enemy-name{
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 85px;
+        left: 430px;
+    }
+
+    .enemy-level{
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 86px;
+        left: 655px;
+
+    }
+
+    .enemy-HP-now{
+        font-weight: bold;
+        margin: 0 auto;
+        position: absolute;
+        top: 112px;
+        left: 538px;
+      }
+
+    .white-back-e{
+        width: 177px;
+        height: 25px;
+        font-weight: bold;
+        margin: 0 auto;
+        position: absolute;
+        background-color: white;
+        top: 113px;
+        left: 541px;
+    }
+
+
+
+
+
+    /* プレイヤー画面 */
+    .player-wrap{
+        width: 1200px;
+        height: 500px;
+        
+    }
+
+    .player-name{
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 300px;
+        left: 880px;
+    }
+
+    .player-level{
+        font-size: 22px;
+        font-weight: bold;
+        position: absolute;
+        top: 305px;
+        left: 1100px;
+
+    }
+
+    .white-back-p{
+        width: 177px;
+        height: 25px;
+        font-weight: bold;
+        margin: 0 auto;
+        position: absolute;
+        background-color: white;
+        top: 332px;
+        left: 974px;
+    }
+
+    .hp{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .hp > div:first-of-type::after{
+        content: "/";
+    }
+
+    .player-HP{
+        font-weight: bold;
+        margin: 0 auto;
+        position: absolute;
+        top: 330px;
+        left: 970px;
+      }
+
+    .battle-text{
+        
+        width: 400px;
+        height: 120px;
+        position: absolute;
+        top: 450px;
+        left: 410px;
+        text-align: left;
+        font-size: 24px;
+    }
+
+    .player-pic{
+        position: absolute;
+        top: 210px;
+        left: -90px;
+        width: 100%;
+    }
+
+    .rony{
+        position: absolute;
+        top: 210px;
+        left: -90px;
+        width: 100%;
+    }
+
+    .shuwa{
+        position: absolute;
+        top: 210px;
+        left: -90px;
+        width: 100%;
+    }
+
+    .kinnikun{
+        position: absolute;
+        top: 210px;
+        left: -90px;
+        width: 100%;
+    }
+
+    .action{
+        width: 100%;
+    }
+
+    .action-select{
+        width: 300px;
+        height: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 460px;
+        left: 870px;
+        
+    }
+
+    .select-btn{
+        width: 150px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        padding: 5px 5px;
+        text-align: center;
+        font-size: 1.0rem;
+        background-color: black;
+        color: #fff;
+
+    }
+
+    .select{
+        width: 300px;
+        height: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 460px;
+        left: 870px;    
+              
+    }
+
+
+    .reroad-btn{
+        width: 20rem;
+        display: block;
+        margin: auto;
+        
+        padding: 2.1rem 0;
+        text-align: center;
+        font-size: 1.8rem;
+        background-color: red;
+        color: #fff;
+        position: absolute;
+        top: 600px;
+        left: 650px;
+        
+    
+    }
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    
+        <style type="text/css"><!--
+        #max {
+        width: 200px;
+        height: 20px;
+        background-color: red;
+        position: relative;
+        }
+        #now {
+        width: 200px;
+        height: 20px;
+        background-color: yellowgreen;
+        text-align: right;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        }
+        #txt {
+        width: 200px;
+        }
+        #btn1 {
+        display: block;
+        }
+        #btn2 {
+        display: none;
+        }
+        --></style>
+        <script type="text/javascript"><!--
+        
+        // ★初期化
+        function load() {
+        maxhp = 100; // 変更可
+        nowhp = maxhp;
+        
+        N = document.getElementById("now");
+        T = document.getElementById("txt");
+        B1 = document.getElementById("btn1");
+        B2 = document.getElementById("btn2");
+        
+        N.innerHTML = nowhp + "/" + maxhp;
+        }
+        
+        // ★ゲージ減少
+        function attack() {
+        random = Math.floor(Math.random() * 11);
+        nowhp = nowhp - random;
+        if (nowhp >= 0) {
+        if (random == 0) {
+        str = "勇者に攻撃をかわされた";
+        } else {
+        str = "勇者に[ " + random + " ]のダメージを与えた";
+        }
+        } else {
+        nowhp = 0;
+        str = "勇者は力尽きた";
+        B1.style.display = "none";
+        B2.style.display = "block";
+        }
+        T.value = str;
+        N.innerHTML = nowhp + "/" + maxhp;
+        N.style.width = 200 / maxhp * nowhp + "px";
+        }
+        
+        // ★リロード
+        function reload() {
+        nowhp = maxhp;
+        B1.style.display = "block";
+        B2.style.display = "none";
+        T.value = "新たな勇者を見つけた";
+        N.innerHTML = nowhp + "/" + maxhp;
+        N.style.width = 200 / maxhp * nowhp + "px";
+        }
+        
+        //--></script>
+        </head>
+        <body onload="load()">
+        <div id="max">
+        <div id="now"></div>
+        </div>
+        <input id="btn1" type="button" onclick="attack()" value="攻撃">
+        <input id="btn2" type="button" onclick="reload()" value="葬る">
+        <input id="txt" type="text" value="勇者を見つけた">
+        </body>
+        </html>
